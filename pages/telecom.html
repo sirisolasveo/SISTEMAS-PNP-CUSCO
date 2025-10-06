@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecomunicaciones - Portal PNP</title>
+    
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="section-title">Telecomunicaciones y Control de Dispositivos</h1>
+
+            <!-- Lista de Enlaces -->
+            <div class="space-y-6">
+                <!-- Equipos Celulares -->
+                <section class="fade-in" style="--animation-order: 1">
+                    <h2 class="subsection-title">
+                        <i class="fas fa-mobile-alt text-[#D4AF37] mr-2 floating-icon"></i>
+                        Control de Equipos Móviles
+                    </h2>
+                    <div class="grid gap-4 md:grid-cols-1">
+                        <a href="https://checatuimei.renteseg.osiptel.gob.pe/consultaIMEI.xhtml" class="link-item group">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h3 class="font-medium text-[#0B3B0B] group-hover:text-[#164A16]">Consulta de Equipos Celulares</h3>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                        Verifica si un equipo está reportado como robado, perdido o recuperado
+                                    </p>
+                                </div>
+                                <i class="fas fa-chevron-right text-[#D4AF37] transition-transform"></i>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Líneas Móviles -->
+                <section class="fade-in">
+                    <h2 class="subsection-title">
+                        <i class="fas fa-sim-card text-[#D4AF37] mr-2"></i>
+                        Gestión de Líneas Móviles
+                    </h2>
+                    <a href="https://checatuslineas.osiptel.gob.pe/" class="link-item">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-medium text-[#0B3B0B]">Verificación de Líneas Registradas</h3>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Consulta las líneas móviles registradas a tu nombre
+                                </p>
+                            </div>
+                            <i class="fas fa-chevron-right text-[#D4AF37]"></i>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Información Adicional -->
+                <div class="bg-white p-6 rounded-lg shadow-sm mt-8 fade-in">
+                    <h3 class="text-lg font-semibold text-[#0B3B0B] mb-3">
+                        <i class="fas fa-info-circle text-[#D4AF37] mr-2"></i>
+                        Información Importante
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Mantenga actualizada la información de sus equipos</li>
+                        <li>Reporte inmediatamente cualquier pérdida o robo</li>
+                        <li>Verifique periódicamente las líneas a su nombre</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

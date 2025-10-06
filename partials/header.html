@@ -1,0 +1,176 @@
+<!-- Barra de navegación móvil -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50 px-4 py-2">
+    <div class="grid grid-cols-4 gap-4">
+        <a href="/index.html" class="nav-item flex flex-col items-center text-center">
+            <i class="fas fa-home text-xl"></i>
+            <span class="text-xs mt-1">Inicio</span>
+        </a>
+        <a href="/pages/tramites.html" class="nav-item flex flex-col items-center text-center">
+            <i class="fas fa-passport text-xl"></i>
+            <span class="text-xs mt-1">Trámites</span>
+        </a>
+        <a href="/pages/transito.html" class="nav-item flex flex-col items-center text-center">
+            <i class="fas fa-car text-xl"></i>
+            <span class="text-xs mt-1">Tránsito</span>
+        </a>
+        <a href="/pages/seguridad.html" class="nav-item flex flex-col items-center text-center">
+            <i class="fas fa-shield-alt text-xl"></i>
+            <span class="text-xs mt-1">Seguridad</span>
+        </a>
+    </div>
+</nav>
+
+    <!-- Barra superior fija -->
+    <div class="bg-white fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="assets/img/logo-pnp.png" alt="Logo PNP" class="h-10 mr-3" onerror="this.style.display='none'">
+                    <span class="text-[#0B3B0B] font-semibold text-lg" id="currentPage">Inicio</span>
+                </div>
+                <div class="text-[#D4AF37]">
+                    <i class="fas fa-bell text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header original con menú de navegación -->
+    <header class="bg-[#0B3B0B] shadow-md">
+        <nav class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo y título -->
+                <div class="flex items-center">
+                    <img src="../assets/img/logo-pnp.png" alt="Logo PNP" class="h-12 w-auto mr-3">
+                    <span class="text-white font-semibold text-lg">Portal Informativo PNP</span>
+                </div>
+
+                <!-- Menú de navegación -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="../index.html" class="text-white hover:text-[#D4AF37] px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        <a href="../pages/tramites.html" class="text-white hover:text-[#D4AF37] px-3 py-2 rounded-md text-sm font-medium">Trámites</a>
+                        <a href="../pages/transito.html" class="text-white hover:text-[#D4AF37] px-3 py-2 rounded-md text-sm font-medium">Tránsito</a>
+                        <a href="../pages/seguridad.html" class="text-white hover:text-[#D4AF37] px-3 py-2 rounded-md text-sm font-medium">Seguridad</a>
+                        <a href="../pages/telecom.html" class="text-white hover:text-[#D4AF37] px-3 py-2 rounded-md text-sm font-medium">Telecomunicaciones</a>
+                    </div>
+                </div>
+
+                <!-- Botón menú móvil -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-[#D4AF37]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menú móvil -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="../index.html" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-[#D4AF37]">Inicio</a>
+                    <a href="../pages/tramites.html" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-[#D4AF37]">Trámites</a>
+                    <a href="../pages/transito.html" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-[#D4AF37]">Tránsito</a>
+                    <a href="../pages/seguridad.html" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-[#D4AF37]">Seguridad</a>
+                    <a href="../pages/telecom.html" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-[#D4AF37]">Telecomunicaciones</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navegación móvil fija -->
+    <nav class="mobile-nav fixed bottom-0 left-0 right-0 z-50">
+        <div class="grid grid-cols-4 gap-2 px-2 py-1">
+            <a href="index.html" class="nav-item text-center py-2">
+                <i class="fas fa-home text-xl mb-1"></i>
+                <span class="text-xs block">Inicio</span>
+            </a>
+            <a href="pages/tramites.html" class="nav-item text-center py-2">
+                <i class="fas fa-passport text-xl mb-1"></i>
+                <span class="text-xs block">Trámites</span>
+            </a>
+            <a href="pages/transito.html" class="nav-item text-center py-2">
+                <i class="fas fa-car text-xl mb-1"></i>
+                <span class="text-xs block">Tránsito</span>
+            </a>
+            <a href="pages/seguridad.html" class="nav-item text-center py-2">
+                <i class="fas fa-shield-alt text-xl mb-1"></i>
+                <span class="text-xs block">Seguridad</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Sección de bienvenida -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-[#0B3B0B] text-2xl font-semibold mb-4">Bienvenido al Portal Informativo PNP</h2>
+            <p class="text-gray-700 text-base mb-4">Aquí encontrarás información relevante sobre los trámites, servicios y noticias de interés relacionados con la Policía Nacional del Perú.</p>
+            <a href="../pages/tramites.html" class="bg-[#0B3B0B] text-white px-4 py-2 rounded-md hover:bg-[#D4AF37] transition-colors duration-300">Ver Trámites</a>
+        </section>
+
+        <!-- Sección de noticias -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-[#0B3B0B] text-2xl font-semibold mb-4">Últimas Noticias</h2>
+            <div class="space-y-4">
+                <!-- Noticia 1 -->
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <img src="../assets/img/noticia1.jpg" alt="Noticia 1" class="h-16 w-16 rounded-md mr-4">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[#0B3B0B] font-semibold text-lg">Título de la noticia 1</h3>
+                        <p class="text-gray-700 text-sm">Resumen breve de la noticia 1. <a href="#" class="text-[#D4AF37] hover:underline">Leer más</a></p>
+                    </div>
+                </div>
+
+                <!-- Noticia 2 -->
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <img src="../assets/img/noticia2.jpg" alt="Noticia 2" class="h-16 w-16 rounded-md mr-4">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[#0B3B0B] font-semibold text-lg">Título de la noticia 2</h3>
+                        <p class="text-gray-700 text-sm">Resumen breve de la noticia 2. <a href="#" class="text-[#D4AF37] hover:underline">Leer más</a></p>
+                    </div>
+                </div>
+
+                <!-- Noticia 3 -->
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <img src="../assets/img/noticia3.jpg" alt="Noticia 3" class="h-16 w-16 rounded-md mr-4">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[#0B3B0B] font-semibold text-lg">Título de la noticia 3</h3>
+                        <p class="text-gray-700 text-sm">Resumen breve de la noticia 3. <a href="#" class="text-[#D4AF37] hover:underline">Leer más</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-[#0B3B0B] text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="mb-4 md:mb-0">
+                    <img src="../assets/img/logo-pnp-blanco.png" alt="Logo PNP Blanco" class="h-10 w-auto">
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8">
+                    <a href="../index.html" class="hover:text-[#D4AF37] mb-2 md:mb-0">Inicio</a>
+                    <a href="../pages/tramites.html" class="hover:text-[#D4AF37] mb-2 md:mb-0">Trámites</a>
+                    <a href="../pages/transito.html" class="hover:text-[#D4AF37] mb-2 md:mb-0">Tránsito</a>
+                    <a href="../pages/seguridad.html" class="hover:text-[#D4AF37] mb-2 md:mb-0">Seguridad</a>
+                    <a href="../pages/telecom.html" class="hover:text-[#D4AF37]">Telecomunicaciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

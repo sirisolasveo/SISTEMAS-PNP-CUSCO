@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas de Tránsito - Portal PNP</title>
+    
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de navegación móvil -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50 px-4 py-2">
+        <div class="grid grid-cols-4 gap-4">
+            <a href="../index.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Inicio</span>
+            </a>
+            <a href="tramites.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-passport text-xl"></i>
+                <span class="text-xs mt-1">Trámites</span>
+            </a>
+            <a href="transito.html" class="nav-item flex flex-col items-center text-center active">
+                <i class="fas fa-car text-xl"></i>
+                <span class="text-xs mt-1">Tránsito</span>
+            </a>
+            <a href="seguridad.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-shield-alt text-xl"></i>
+                <span class="text-xs mt-1">Seguridad</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header Container 
+    <div id="header-container"></div>-->
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="section-title">Consultas de Tránsito y Transporte</h1>
+
+            <!-- Lista de Enlaces -->
+            <div class="space-y-6">
+                <!-- Récord del Conductor -->
+                <section class="fade-in" style="--animation-order: 1">
+                    <h2 class="subsection-title">
+                        <i class="fas fa-id-card text-[#D4AF37] mr-2 floating-icon"></i>
+                        Historial del Conductor
+                    </h2>
+                    <div class="grid gap-4 md:grid-cols-1">
+                        <a href="https://recordconductor.mtc.gob.pe/" class="link-item group">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h3 class="font-medium text-[#0B3B0B] group-hover:text-[#164A16]">Récord de Conductor</h3>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                        Consulta tu historial de infracciones y puntos
+                                    </p>
+                                </div>
+                                <i class="fas fa-chevron-right text-[#D4AF37] transition-transform"></i>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Servicio de Transporte -->
+                <section class="fade-in">
+                    <h2 class="subsection-title">
+                        <i class="fas fa-taxi text-[#D4AF37] mr-2"></i>
+                        Verificación de Habilitación para el Servicio de Transporte
+                    </h2>
+                    <a href="https://sistemas.atu.gob.pe/ConsultaCredencial/" class="link-item">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-medium text-[#0B3B0B]">Consulta de Conductor</h3>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Verifica la habilitación de conductores de servicio público
+                                </p>
+                            </div>
+                            <i class="fas fa-chevron-right text-[#D4AF37]"></i>
+                        </div>
+                    </a>
+                    <a href="https://sistemas.atu.gob.pe/ConsultaVehiculo" class="link-item mt-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-medium text-[#0B3B0B]">Consulta de Vehículo</h3>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Verifica el estado y permisos del vehículo
+                                </p>
+                            </div>
+                            <i class="fas fa-chevron-right text-[#D4AF37]"></i>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Consultas Adicionales -->
+                <section class="fade-in">
+                    <h2 class="subsection-title">
+                        <i class="fas fa-search text-[#D4AF37] mr-2"></i>
+                        Otras Consultas
+                    </h2>
+                    <a href="https://www.sat.gob.pe/VirtualSAT/principal.aspx?mysession=BSk%2buvPiVQRJRgJ25vK0PMHdbm%2b4ciqEWDfjGRz12rI%3d" class="link-item">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-medium text-[#0B3B0B]">Consulta Vehicular – SAT</h3>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Verifica multas y pagos pendientes
+                                </p>
+                            </div>
+                            <i class="fas fa-chevron-right text-[#D4AF37]"></i>
+                        </div>
+                    </a>
+                    <a href="https://www2.sunarp.gob.pe/consulta-vehicular/inicio" class="link-item mt-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-medium text-[#0B3B0B]">Consulta de Propiedad Vehicular – SUNARP</h3>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Información registral del vehículo
+                                </p>
+                            </div>
+                            <i class="fas fa-chevron-right text-[#D4AF37]"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Informativo PNP</title>
+    
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de navegación móvil -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50 px-4 py-2">
+        <div class="grid grid-cols-4 gap-4">
+            <a href="index.html" class="nav-item flex flex-col items-center text-center active">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Inicio</span>
+            </a>
+            <a href="pages/tramites.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-passport text-xl"></i>
+                <span class="text-xs mt-1">Trámites</span>
+            </a>
+            <a href="pages/transito.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-car text-xl"></i>
+                <span class="text-xs mt-1">Tránsito</span>
+            </a>
+            <a href="pages/seguridad.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-shield-alt text-xl"></i>
+                <span class="text-xs mt-1">Seguridad</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="main-container p-8 mb-8">
+            <h1 class="text-4xl font-bold gradient-title text-center mb-8 fade-in">
+                Portal Informativo - Enlaces de Consulta
+            </h1>
+
+            <!-- Grid de Secciones Principales -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+                <!-- Trámites -->
+                <a href="pages/tramites.html" class="link-card block bg-white p-6 rounded-xl shadow-lg fade-in cursor-pointer">
+                    <div class="relative z-10">
+                        <i class="fas fa-passport text-[#D4AF37] text-5xl mb-6 floating-icon block text-center"></i>
+                        <h2 class="text-xl font-bold text-[#0B3B0B] mb-3 text-center">Trámites para Extranjeros</h2>
+                        <p class="text-gray-600 mb-6 text-center">Gestiona documentación y permisos para ciudadanos extranjeros.</p>
+                        <div class="explore-button text-white text-center py-2 px-4 rounded-lg transition-all duration-300">
+                            Explorar <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+
+            <!-- Tránsito -->
+            <a href="pages/transito.html" class="link-card block bg-white p-6 rounded-xl shadow-lg fade-in cursor-pointer">
+                <div class="relative z-10">
+                    <i class="fas fa-car text-[#D4AF37] text-5xl mb-6 floating-icon block text-center"></i>
+                    <h2 class="text-xl font-bold text-[#0B3B0B] mb-3 text-center">Consultas de Tránsito</h2>
+                    <p class="text-gray-600 mb-6 text-center">Información sobre licencias, vehículos y transporte.</p>
+                    <div class="explore-button text-white text-center py-2 px-4 rounded-lg transition-all duration-300">
+                        Explorar <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Seguridad -->
+            <a href="pages/seguridad.html" class="link-card block bg-white p-6 rounded-xl shadow-lg fade-in cursor-pointer">
+                <div class="relative z-10">
+                    <i class="fas fa-shield-alt text-[#D4AF37] text-5xl mb-6 floating-icon block text-center"></i>
+                    <h2 class="text-xl font-bold text-[#0B3B0B] mb-3 text-center">Seguridad Ciudadana</h2>
+                    <p class="text-gray-600 mb-6 text-center">Recursos y consultas sobre seguridad y justicia.</p>
+                    <div class="explore-button text-white text-center py-2 px-4 rounded-lg transition-all duration-300">
+                        Explorar <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Telecomunicaciones -->
+            <a href="pages/telecom.html" class="link-card block bg-white p-6 rounded-xl shadow-lg fade-in cursor-pointer">
+                <div class="relative z-10">
+                    <i class="fas fa-mobile-alt text-[#D4AF37] text-5xl mb-6 floating-icon block text-center"></i>
+                    <h2 class="text-xl font-bold text-[#0B3B0B] mb-3 text-center">Telecomunicaciones</h2>
+                    <p class="text-gray-600 mb-6 text-center">Control y consulta de dispositivos móviles.</p>
+                    <div class="explore-button text-white text-center py-2 px-4 rounded-lg transition-all duration-300">
+                        Explorar <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Sección de Información -->
+        <div class="mt-12 text-center fade-in bg-white rounded-xl p-8 shadow-lg">
+            <h3 class="text-3xl font-bold gradient-title mb-6">
+                Portal Informativo para los PNP
+            </h3>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                Accede de manera rápida y segura a los servicios en línea más importantes.
+                Toda la información que necesitas en un solo lugar.
+            </p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <i class="fas fa-star text-[#D4AF37] text-3xl floating-icon"></i>
+                <i class="fas fa-shield-alt text-[#0B3B0B] text-3xl floating-icon"></i>
+                <i class="fas fa-star text-[#D4AF37] text-3xl floating-icon"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
