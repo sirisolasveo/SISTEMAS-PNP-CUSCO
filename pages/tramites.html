@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trámites para Extranjeros - Portal PNP</title>
+    
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/SISTEMAS-PNP-CUSCO/assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de navegación móvil -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50 px-4 py-2">
+        <div class="grid grid-cols-4 gap-4">
+            <a href="/SISTEMAS-PNP-CUSCO/" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Inicio</span>
+            </a>
+            <a href="/SISTEMAS-PNP-CUSCO/pages/tramites.html" class="nav-item flex flex-col items-center text-center active">
+                <i class="fas fa-passport text-xl"></i>
+                <span class="text-xs mt-1">Trámites</span>
+            </a>
+            <a href="/SISTEMAS-PNP-CUSCO/pages/transito.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-car text-xl"></i>
+                <span class="text-xs mt-1">Tránsito</span>
+            </a>
+            <a href="/SISTEMAS-PNP-CUSCO/pages/seguridad.html" class="nav-item flex flex-col items-center text-center">
+                <i class="fas fa-shield-alt text-xl"></i>
+                <span class="text-xs mt-1">Seguridad</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 pt-3 pb-8">
+        <div class="main-container p-4 mb-4">
+            <h1 class="text-2xl sm:text-3xl font-bold gradient-title text-center mb-4 fade-in">
+                Trámites
+            </h1>
+
+            <!-- Grid de botones -->
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <!-- Consulta Venezolanos -->
+                <a href="https://www.dateas.com/es/servicio/personas/venezuela/" class="app-button relative overflow-hidden bg-gradient-to-br from-[#0B3B0B] to-[#1a5c1a] p-4 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="icon-wrapper bg-white/10 p-3 rounded-full mb-3">
+                            <i class="fas fa-users text-[#D4AF37] text-3xl sm:text-4xl"></i>
+                        </div>
+                        <h2 class="text-white text-sm sm:text-lg font-bold">Venezolanos</h2>
+                    </div>
+                </a>
+
+                <!-- Carnet Extranjería -->
+                <a href="https://sel.migraciones.gob.pe/servmig-valreg/VerificarCE" class="app-button relative overflow-hidden bg-gradient-to-br from-[#0B3B0B] to-[#1a5c1a] p-4 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="icon-wrapper bg-white/10 p-3 rounded-full mb-3">
+                            <i class="fas fa-id-card text-[#D4AF37] text-3xl sm:text-4xl"></i>
+                        </div>
+                        <h2 class="text-white text-sm sm:text-lg font-bold">Carnet</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
